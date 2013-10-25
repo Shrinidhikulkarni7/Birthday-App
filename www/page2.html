@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="page1.css">
+
+<body style="background-color:#1D1D1D;">
+    <div>
+      <!--<button onclick="playStream()">Listen Live</button>!-->
+        <audio id="jolly" src="audio/jolly.mp3"></audio>    
+        <img src="img/jolly.gif" onclick="playStream('jolly','jolly.mp3')" width="50" height="auto" style="display: block; margin-left: auto;">            
+        </div>
+        <div id="page2-markdown2" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>Radhe
+                <strong>Bhai!</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="vyas" src="audio/vyas.aac"></audio>
+            <img src="img/vyas.gif" onclick="playStream('vyas','vyas.aac')" width="50" height="auto" style="display:block;">
+        </div>
+        <div id="page2-markdown7" style="color:#FFFFFF;font-family:'Arial'">
+            <p>Vasco
+                <strong>UDAgama!</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="sin" src="audio/sin.mp3"></audio>
+            <img src="img/sin.gif" onclick="playStream('sin','sin.mp3')" width="50" height="auto" style="display: block; margin-left: auto;">
+        </div>
+        <div id="page2-markdown3" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>Sinny T:)
+                <strong>(SIN9YT)</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="srk" src="audio/srk.mp3"></audio>
+            <img src="img/srk.gif" onclick="playStream('srk','srk.mp3')" width="50" height="auto" style="display:block;">
+        </div>
+        <div id="page2-markdown4" style="color:#FFFFFF;font-family:'Arial'">
+            <p>SRK
+                <strong>Mr.DeadLOCK</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="soni" src="audio/soni.aac"></audio>
+            <img src="img/soni.gif" onclick="playStream('soni','soni.aac')" width="50" height="auto" style="display: block; margin-left: auto;">
+        </div>
+        <div id="page2-markdown4" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>Soni
+                <strong>Bhaii;-)</strong>
+            </p>
+        </div>
+        <div>
+        <center><a href="page3.html" class="moreButton">Next!</a></center>
+        </div>
+       <script>
+        function playStream(ID,filename) {
+       var audio = document.getElementById(ID);
+        if (audio.paused) {
+            audio.play();
+        }
+            else{
+        audio.currentTime = 0;
+        audio.pause();
+    }     
+      
+           }
+    
+    </script>
+</body>

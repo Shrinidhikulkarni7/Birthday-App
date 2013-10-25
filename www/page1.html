@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="page1.css">
+
+<body style="background-color:#1D1D1D;">
+    <div>
+      <!--<button onclick="playStream()">Listen Live</button>!-->
+        <audio id="swathi" src="audio/swathi.m4a"></audio>    
+        <img src="img/swathi.gif" onclick="playStream('swathi','swathi.m4a')" width="50" height="auto" style="display: block; margin-left: auto;">            
+        </div>
+        <div id="page2-markdown2" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>Yo!
+                <strong>Swathu</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="souj" src="audio/souj.mp3"></audio>
+            <img src="img/souj.gif" onclick="playStream('souj','souj.mp3')" width="50" height="auto" style="display:block;">
+        </div>
+        <div id="page2-markdown7" style="color:#FFFFFF;font-family:'Arial'">
+            <p>Souju
+                <strong>Smart :P</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="eshika" src="audio/eshika.aac"></audio>
+            <img src="img/eshika.gif" onclick="playStream('eshika','eshika.aac')" width="50" height="auto" style="display: block; margin-left: auto;">
+        </div>
+        <div id="page2-markdown3" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>Eshi
+                <strong>Ma</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="sush" src="audio/sush.aac"></audio>
+            <img src="img/sush.gif" onclick="playStream('sush','sush.aac')" width="50" height="auto" style="display:block;">
+        </div>
+        <div id="page2-markdown4" style="color:#FFFFFF;font-family:'Arial'">
+            <p>
+                <strong>Sushie=D</strong>
+            </p>
+        </div>
+        <div>
+            <audio id="ramp" src="audio/ramp.mp3"></audio>
+            <img src="img/ramp.gif" onclick="playStream('ramp','ramp.mp3')" width="50" height="auto" style="display: block; margin-left: auto;">
+        </div>
+        <div id="page2-markdown5" style="color:#FFFFFF;text-align:right;font-family:'Arial'">
+            <p>
+                <strong>Ramp!</strong>
+            </p>
+        </div>
+        <div>
+        <center><a href="page2.html" class="moreButton">Next!</a></center>
+        </div>
+        <script>
+        function playStream(ID,filename) {
+       var audio = document.getElementById(ID);
+        if (audio.paused) {
+            audio.play();
+        }
+            else{
+        audio.currentTime = 0;
+        audio.pause();
+    }     
+      
+           }
+    
+    </script>
+</body>

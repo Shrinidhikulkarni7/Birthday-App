@@ -1,0 +1,31 @@
+<body style="background-color:#1D1D1D;">
+<link rel="stylesheet" href="page1.css">
+<center><img src="img/bday2.gif"</center><br><br>
+    
+      <div>
+            <audio id="pooni" src="audio/pooni.mp3"></audio>
+        <center><img src="img/pooni.gif" onclick="playStream('pooni','pooni.mp3')" width="50" height="auto" style="display: block; "></center>    
+        </div>
+        <div id="page2-markdown4" style="color:#FFFFFF;text-align:center;font-family:'Arial'">
+            <p>Singapore
+                <strong>Sudheer =D</strong>
+            </p>
+        <center><a href="#" class="moreButton">Tap My Pic;-)</a></center>
+        </div>
+        
+            <script>
+        function playStream(ID,filename) {
+       var audio = document.getElementById(ID);
+        if (audio.paused) {
+            audio.play();
+        }
+            else{
+        audio.currentTime = 0;
+        audio.pause();
+    }     
+      
+           }
+    
+    </script>
+    </center>
+</body>
